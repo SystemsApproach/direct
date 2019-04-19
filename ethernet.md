@@ -348,3 +348,6 @@ connected by point-to-point links to switches while others remained
 tapped into coax—all the while retaining the simplicity of network
 administration.
 
+{% include "../sidebars/token-ring.md" %}
+
+

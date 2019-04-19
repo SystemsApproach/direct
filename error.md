@@ -26,6 +26,8 @@ error detection algorithms allow the recipient to reconstruct the
 correct message even after it has been corrupted; such algorithms rely
 on *error-correcting codes*, discussed below.
 
+{% include "../sidebars/probability.md" %}
+
 One of the most common techniques for detecting transmission errors is a
 technique known as the *cyclic redundancy check* (CRC). It is used in
 nearly all the link-level protocols discussed in this chapter.
@@ -333,33 +335,6 @@ with the stated properties:
 - Any odd number of errors, as long as $$C(x)$$ contains the factor
     $$(x + 1)$$
 
-We have mentioned that it is possible to use codes that not only detect
-the presence of errors but also enable errors to be corrected. Since the
-details of such codes require yet more complex mathematics than that
-required to understand CRCs, we will not dwell on them here. However, it
-is worth considering the merits of correction versus detection.
-
-At first glance, it would seem that correction is always better, since
-with detection we are forced to throw away the message and, in general,
-ask for another copy to be transmitted. This uses up bandwidth and may
-introduce latency while waiting for the retransmission. However, there
-is a downside to correction, as it generally requires a greater number
-of redundant bits to send an error-correcting code that is as strong
-(that is, able to cope with the same range of errors) as a code that
-only detects errors. Thus, while error detection requires more bits to
-be sent when errors occur, error correction requires more bits to be
-sent *all the time*. As a result, error correction tends to be most
-useful when (1) errors are quite probable, as they may be, for example,
-in a wireless environment, or (2) the cost of retransmission is too
-high, for example, because of the latency involved retransmitting a
-packet over a satellite link.
-
-The use of error-correcting codes in networking is sometimes referred to
-as *forward error correction* (FEC) because the correction of errors is
-handled "in advance" by sending extra information, rather than waiting
-for errors to happen and dealing with them later by retransmission. FEC
-is commonly used in wireless networks such as 802.11.
-
 - Any "burst" error (i.e., sequence of consecutive errored bits) for
     which the length of the burst is less than $$k$$ bits (Most burst
     errors of length greater than $$k$$ bits can also be detected.)
@@ -369,6 +344,8 @@ For example, Ethernet uses CRC-32, which is defined as follows:
 
 - CRC-32 = $$x^{32} + x^{26} + x^{23} + x^{22} + x^{16} + x^{12} +
   x^{11} + x^{10} + x^8 + x^7 + x^5 + x^4 + x^2 + x + 1$$
+
+{% include "../sidebars/error-correction.md" %}
 
 Finally, we note that the CRC algorithm, while seemingly complex, is
 easily implemented in hardware using a $$k$$-bit shift register and XOR

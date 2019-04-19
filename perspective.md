@@ -119,6 +119,8 @@ consider only the upper layer, which is concerned with the much simpler
 problem of encoding binary data onto these two signals. The next section
 discusses such encodings.
 
+{% include "../sidebars/shannon.md" %}
+
 Another way to classify links is in terms of how they are used. Various
 economic and deployment issues tend to influence where different link
 types are found. Most consumers interact with the Internet either

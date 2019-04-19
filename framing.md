@@ -307,3 +307,5 @@ fields in the frame overhead points to the beginning of the payload. The
 value of this capability is that it simplifies the task of synchronizing
 the clocks used throughout the carriers' networks, which is something
 that carriers spend a lot of their time worrying about.
+
+{% include "../sidebars/layer.md" %}
