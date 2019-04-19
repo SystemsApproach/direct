@@ -481,6 +481,27 @@ terms of the example given in [Figure 6](#wireless2), `Addr1`
 corresponds to E, `Addr2` identifies AP-3, `Addr3` corresponds to AP-1,
 and `Addr4` identifies A.
 
+### Security of Wireless Links 
+
+One of the fairly obvious problems of wireless links compared to wires 
+or fibers is that you can't be too sure where your data has gone. You 
+can probably figure out if it was received by the intended receiver, but 
+there is no telling how many other receivers might have also picked up 
+your transmission. So, if you are concerned about the privacy of your 
+data, wireless networks present a challenge. 
+
+Even if you are not concerned about data privacy—or perhaps have taken 
+care of it in some other way—you may be concerned about an 
+unauthorized user injecting data into your network. If nothing else,
+such a user might be able to consume resources that you would prefer 
+to consume yourself, such as the finite bandwidth between your house 
+and your ISP. 
+
+For these reasons, wireless networks typically come with some sort of 
+mechanism to control access to both the link itself and the transmitted 
+data. These mechanisms are often categorized as *wireless security.*
+The widely adopted WPA2 is described in Chapter 8. 
+
 ## Bluetooth (802.15.1)
 
 Bluetooth fills the niche of very short range communication between
