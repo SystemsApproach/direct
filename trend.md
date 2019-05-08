@@ -104,7 +104,9 @@ environments, but also has the potential to open the access network to
 developers that instinctively go where there are opportunities to
 innovate.
 
-> [!NOTE|label:Broader Perspective]
+<!--- > [!NOTE|label:Broader Perspective] --->
+> **Broader Perspective**
+>
 > To continue reading about the cloudification of the Internet, see
 > [Virtual Networks All the Way Down](../internetworking/trend.md).
 >
