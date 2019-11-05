@@ -174,6 +174,8 @@ consider what happens if the last byte of a frame’s body is the ETX
 character.) A form of framing that ensures that all frames are the same
 size is described in the next subsection.
 
+.. include:: ../sidebars/layer.rst
+	     
 Clock-Based Framing (SONET)
 ---------------------------
 
